@@ -1,21 +1,24 @@
 import java.util.Scanner;
 public class kdvHesaplama {
     public static void main(String[] args) {
-        double kdvsiz , kdvli , kdvtutari;
+        double anaPara , kdv , kdvTutari , kdvDahil;
+        boolean kdvDurum;
 
         Scanner inp = new Scanner(System.in);
 
         System.out.println("Tutar giriniz = ");
-        kdvsiz = inp.nextDouble();
+        anaPara = inp.nextDouble();
 
-        kdvtutari = ((kdvsiz / 100) * 18);
+        kdvDurum = (0 < anaPara) && (anaPara > 1000);
 
-        kdvli = kdvsiz + kdvtutari;
+         kdv = kdvDurum ? 0.08 : 0.18;
 
+        kdvTutari = kdv * anaPara;
+        kdvDahil = kdvTutari + anaPara;
 
-
-        System.out.println("Kdv'siz tutar = "+kdvsiz);
-        System.out.println("Kdv tutarı = "+kdvtutari);
-        System.out.println("Kdv'li tutar = "+kdvli);
+        System.out.println("Girilen tutar = "+anaPara);
+        System.out.println("KDV orani = "+kdv);
+        System.out.println("KDV tutari = "+kdvTutari);
+        System.out.println("KDV dahil tutar = "+kdvDahil);
     }
 }
