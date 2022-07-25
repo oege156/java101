@@ -12,6 +12,7 @@ public class hesapMakinesiSwitch {
         n2 = inp.nextInt();
 
         System.out.println("1-Toplama\n2-Cikarma\n3-Carpma\n4-Bolme");
+        System.out.println("Lutfen birini seciniz.");
         select = inp.nextInt();
 
         switch (select) {
@@ -25,11 +26,13 @@ public class hesapMakinesiSwitch {
                 System.out.println("Carpım :" + (n1 * n2));
                 break;
             case 4:
-                System.out.println("Bolum :" + (n1 / n2));
-                if(n2 !=0){
-                    System.out.print("İşleminizin Sonucu: "+(n1/n2));
-                }else {
-                    System.out.print("Bir sayı sıfıra bölünemez");
+                switch (n2){
+                    case 0 :
+                        System.out.println("Bir sayi sifira bolunemez.");
+                        break;
+                    default:
+                        System.out.println("Bolum :"+ (n1 / n2));
+                        break;
                 }
                 break;
 
