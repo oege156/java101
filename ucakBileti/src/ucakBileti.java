@@ -22,28 +22,28 @@ public class ucakBileti {
                     if (travelType == 1) {
                         System.out.println("Your ticket price :" + amount * 0.5);
                     } else if (travelType == 2) {
-                        System.out.println("Your ticket price :" + amount * 0.5 * 0.8);
+                        System.out.println("Your ticket price :" + amount * 0.5 * 0.8 * 2);
                     }
                 }
                 if ((age >= 12) && (age <= 24)) {
                     if (travelType == 1) {
                         System.out.println("Your ticket price :" + amount * 0.9);
                     } else if (travelType == 2) {
-                        System.out.println("Your ticket price :" + amount * 0.9 * 0.8);
+                        System.out.println("Your ticket price :" + amount * 0.9 * 0.8 * 2);
                     }
                 }
                 if ((age > 24) && (age <= 65)) {
                     if (travelType == 1) {
                         System.out.println("Your ticket price :" + amount);
                     } else if (travelType == 2) {
-                        System.out.println("Your ticket price :" + amount * 0.8);
+                        System.out.println("Your ticket price :" + amount * 0.8 * 2);
                     }
                 }
                 if (age > 65) {
                     if (travelType == 1) {
                         System.out.println("Your ticket price :" + amount * 0.7);
                     } else if (travelType == 2) {
-                        System.out.println("Your ticket price :" + amount * 0.7 * 0.8);
+                        System.out.println("Your ticket price :" + amount * 0.7 * 0.8 * 2);
                     }
                 }
             }  else {
