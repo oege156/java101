@@ -19,6 +19,5 @@ public class ebobEkok {
             }
             System.out.println("ebob :" + ebob);
             System.out.println("ekok :" + (n1 * n2) / ebob);
-
     }
 }
