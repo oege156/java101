@@ -17,6 +17,14 @@ public class palindromSayilar {
     }
 
     public static void main(String args[]) {
-        System.out.println(isPalindrom(9889));
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Please enter the number :");
+        int number=inp.nextInt();
+        if (isPalindrom(number)){
+            System.out.println(+number+" is Palindrome.");
+        }else {
+            System.out.println(+number+" is not Palindrome.");
+        }
     }
 }
